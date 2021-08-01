@@ -45,7 +45,6 @@ public class InsertStudent extends AppCompatActivity {
         Init();
         RequestQueue queue = Volley.newRequestQueue(this);
         String url = "http://20.106.192.35:3000/insertStudent";
-
         submit.setOnClickListener(v->{
             StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
                 @Override
